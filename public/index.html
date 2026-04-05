@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="theme-color" content="#0a2540" />
+  <meta name="description" content="AmanTech Smart AI – Ghana's Premier AI Education Platform. Lesson plans, assessments, report cards and more aligned to NaCCA curriculum." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AmanTech AI" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AmanTech Smart AI – Ghana Education AI" />
+  <meta property="og:description" content="AI-powered education tools built for Ghana's NaCCA curriculum." />
+  <meta property="og:type" content="website" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Sora', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+          colors: {
+            navy: { DEFAULT: '#0a2540', light: '#0f3460' },
+            gold: { DEFAULT: '#f5a623', light: '#fbbf24' },
+            teal: { DEFAULT: '#00b4d8', light: '#90e0ef' },
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Paystack -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
+  <title>AmanTech Smart AI – Ghana Education AI</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run AmanTech Smart AI.</noscript>
+  <div id="root"></div>
+</body>
+</html>
