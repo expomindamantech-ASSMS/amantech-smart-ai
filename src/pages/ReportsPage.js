@@ -9,12 +9,7 @@ import { FileText, Sparkles, Plus, Trash2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const GRADES = ['KG 1','KG 2','Primary 1','Primary 2','Primary 3','Primary 4','Primary 5','Primary 6','JHS 1','JHS 2','JHS 3','SHS 1','SHS 2','SHS 3'];
-const SUBJECTS_BY_LEVEL = {
-  KG: ['Language & Literacy','Numeracy','Creative Arts','Our World & Environment','Physical Development'],
-  Primary: ['English Language','Mathematics','Integrated Science','Social Studies','RME','Ghanaian Language','ICT','Creative Arts','Physical Education'],
-  JHS: ['English Language','Mathematics','Integrated Science','Social Studies','RME','Ghanaian Language','ICT','Creative Arts','French'],
-  SHS: ['English Language','Core Mathematics','Integrated Science','Social Studies','Elective 1','Elective 2','Elective 3'],
-};
+
 
 export default function ReportsPage() {
   const { openSubscription } = useOutletContext();
@@ -110,3 +105,4 @@ export default function ReportsPage() {
     </div>
   );
 }
+
