@@ -5,7 +5,7 @@ import { callAI } from '../services/aiService';
 import { saveEntry } from '../services/parseService';
 import { useFeatureAccess } from '../hooks/useFeatureAccess';
 import { Card, AIResult, Loader } from '../components/ui';
-import { Mic, MicOff, Square, Play, Sparkles, FileAudio } from 'lucide-react';
+import { Mic, MicOff, Square, Sparkles, FileAudio } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 export default function VoicePage() {

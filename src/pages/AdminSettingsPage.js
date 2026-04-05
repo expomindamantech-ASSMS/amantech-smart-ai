@@ -17,7 +17,7 @@ export default function AdminSettingsPage() {
   useEffect(() => {
     if (!isAdmin) { nav('/dashboard'); return; }
     loadSettings();
-  }, [isAdmin]);
+  }, [isAdmin, nav]);
 
   const loadSettings = async () => {
     const s = await getAppSettings();

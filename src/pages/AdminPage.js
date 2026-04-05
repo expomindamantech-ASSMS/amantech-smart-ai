@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { getAllUsers, getPayments, sendNotification } from '../services/parseService';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { Card, StatCard, Badge, Modal, Textarea, Input } from '../components/ui';
+import { Card, StatCard, Badge, Modal, Textarea } from '../components/ui';
 import { Users, CreditCard, Bell, TrendingUp, Crown, Search, Send } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { format } from 'date-fns';
@@ -24,7 +24,7 @@ export default function AdminPage() {
   useEffect(() => {
     if (!isAdmin) { nav('/dashboard'); return; }
     load();
-  }, [isAdmin]);
+  }, [isAdmin, nav]);
 
   const load = async () => {
     setLoading(true);
